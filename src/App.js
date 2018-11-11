@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { Header, Form, Segment, Container, Checkbox, Button, Divider} from 'semantic-ui-react';
+import { Header, Form, Segment, Container, Checkbox, Button, Divider, Icon, Image} from 'semantic-ui-react';
 import database from './firebase/firebase';
 import ShowFood from './Food/index'
+import './style.css'
 
 class App extends Component {
   state = {
@@ -42,6 +43,7 @@ class App extends Component {
       user: this.state.username
     }
     database.ref('allFood').push(item).then(()=> {
+      //Change into semantic-ui modal//
       alert('You added an item!');
       this.setState({
         username: '',
@@ -59,10 +61,11 @@ class App extends Component {
  
   render() {
     return (
-      <div style={{ border: '1px ridge cornflowerblue', padding: '25px', margin: '25px' }}>
-        <Header as='h1' textAlign='center'>
+      <div id='App' style={{ border: '1px ridge cornflowerblue', padding: '25px', margin: '25px' }}>
+          <Header as='h1' textAlign='center'>
+            <Image src='https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F2016%2F04%2FSushi-Transparent.png&f=1' avatar />
             Poppin' Potluck
-        </Header>
+          </Header>        
         <Container style={{ display: 'flex', justifyContent: 'center' }}>        
           <Segment  style={{width: '400px'}}>
             <Form onSubmit={this.handleFormSubmit}>
@@ -80,6 +83,9 @@ class App extends Component {
         </Container>
         <Divider/>
         <ShowFood allFood={this.state.allFood} deleteFood={this.deleteFood}/>
+        <Container style={{margin: '50px 0px 0px 0px'}}>
+          <Divider horizontal >Copyright <Icon name='copyright outline'/> 2018 Avery-Dante Hinds</Divider>
+        </Container>
       </div>
     );
   }

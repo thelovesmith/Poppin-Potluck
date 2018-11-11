@@ -1,0 +1,8 @@
+body{
+  background-image: url(https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.seriouseats.com%2Fimages%2F2015%2F07%2F20150715-fried-chicken-primary.jpg&f=1);
+  background-size: cover;
+}
+div#App{ 
+  background-color: cornsilk;
+  border-radius: 15px;
+}
