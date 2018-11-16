@@ -7,11 +7,11 @@ const ShowFood = (props) => {
       <Card key={food.id} > 
         <Segment>
           <Card.Content>
-            <Card.Header>
+            <Card.Header style={{fontSize: '20px', margin: '0px 0px 5px 0px'}}>
               {food.title}
             </Card.Header>
             <Card.Meta> Brought By:</Card.Meta>
-            <Card.Description>
+            <Card.Description style={{fontSize: '15px', textShadow: '1px 1px grey', letterSpacing: '1.5px'}}>
               {food.user}
             </Card.Description>
           </Card.Content>

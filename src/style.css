@@ -3,6 +3,7 @@ body{
   background-size: cover;
 }
 div#App{ 
-  background-color: cornsilk;
+  background-color: rgba(255, 248, 220, 0.744);
   border-radius: 15px;
+  
 }
