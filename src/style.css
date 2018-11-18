@@ -7,3 +7,9 @@ div#App{
   border-radius: 15px;
   
 }
+button.ui.button{
+ float: right
+}
+img.ui.avatar.image{
+  margin: 10px 0px 10px 0px;
+}

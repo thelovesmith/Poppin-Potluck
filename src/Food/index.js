@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Segment, Button} from 'semantic-ui-react';
 
 const ShowFood = (props) => {
+  // Here we loop through the whole allFood array that we sent over via props
   const foodList = props.allFood.map((food) => {
     return(
       <Card key={food.id} > 
@@ -15,15 +16,20 @@ const ShowFood = (props) => {
               {food.user}
             </Card.Description>
           </Card.Content>
-        </Segment>     
-        <Button inverted color='red' onClick={props.deleteFood.bind(null, food.id)}> 
-          Remove Food
-        </Button>
+        </Segment>  
+        {/* Ternary operator stating that if the foods user matches the user that is logged in then removal will be available. Otherwise they will just be able ot vies the food */}
+        {food.user === props.user.displayName || food.user === props.user.email ?    
+          <Button inverted color='red' onClick={props.deleteFood.bind(null, food.id)}> 
+            Remove Food
+          </Button>
+          :
+          null
+        }
       </Card>
     )
   });
   return(
-    <Card.Group style={{ width: '200px' }} color='violet'>
+    <Card.Group color='violet'>
       {foodList}
     </Card.Group>
   )
