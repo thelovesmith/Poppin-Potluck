@@ -92,7 +92,7 @@ class App extends Component {
  
   render() {
     return (
-      <div id='App' style={{ border: '1px ridge cornflowerblue', padding: '25px', margin: '25px' }}>
+      <div id='App' style={{  padding: '25px', margin: '25px' }}>
         
         <Container>
           <Header as='h1' textAlign='left'>
@@ -101,7 +101,7 @@ class App extends Component {
              {this.state.user ?
               <Button color='red' onClick={this.logout} content='Log Out'></Button>
               :
-              <Button color='red' onClick={this.login} content='Login' ></Button>
+              <Button color='red' onClick={this.login} content='Login With Google' ></Button>
             }
           </Header> 
        

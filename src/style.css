@@ -5,6 +5,7 @@ body{
 div#App{ 
   background-color: rgba(255, 248, 220, 0.744);
   border-radius: 15px;
+  border: 2px outset pink;
   
 }
 button.ui.button{
