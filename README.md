@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ave's Potluck App for organinzing food sharing events
+    * Things to do: 
+        * Give users the ability to create groups for specific events
+        * Give them the option to add images with their food and for   the events 
+        * Users should be able to invite friends from the app 
+        * Live Messaging capabilities???
+
+
+
+
+
 
 ## Available Scripts
 
