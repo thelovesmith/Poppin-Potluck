@@ -6,6 +6,8 @@
         * Live Messaging capabilities???]
         * Create a mobile version using flutter 
         * Deploy app using Netlify!!!!
+        * Update node packages
+        
 
 
 
