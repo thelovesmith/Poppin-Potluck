@@ -5,6 +5,7 @@
         * Users should be able to invite friends from the app 
         * Live Messaging capabilities???]
         * Create a mobile version using flutter 
+        * Deploy app using Netlify!!!!
 
 
 
