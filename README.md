@@ -3,7 +3,8 @@
         * Give users the ability to create groups for specific events
         * Give them the option to add images with their food and for   the events 
         * Users should be able to invite friends from the app 
-        * Live Messaging capabilities???
+        * Live Messaging capabilities???]
+        * Create a mobile version using flutter 
 
 
 
